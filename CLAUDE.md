@@ -67,13 +67,6 @@ The form (`action="#" method="post"`) has no backend wired. Submitting it does n
 
 The project is version-controlled with Git and synced to GitHub automatically.
 
-**Remote:** `https://github.com/mozer-eng/aggio-institucional-site` (configure with `git remote add origin <URL>` after creating the repo)
+**Remote:** `https://github.com/TaynanMozer/aggio-institucional-site`
 
 **Auto-sync:** A Claude Code `PostToolUse` hook in `.claude/settings.json` automatically commits and pushes to `origin` after every `Edit` or `Write` operation. No manual `git push` needed.
-
-**Setup (one-time, if remote not yet configured):**
-1. Install GitHub CLI: https://cli.github.com/
-2. Run: `gh auth login`
-3. Run: `gh repo create aggio-institucional-site --public --source=. --push`
-
-After step 3 the remote is wired and auto-sync will push on every file change.
