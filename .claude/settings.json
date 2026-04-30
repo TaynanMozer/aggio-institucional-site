@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"c:/Users/tayna/OneDrive - Aggio/AGGIO Institucional/SITE\" && git add -A 2>/dev/null; git diff --staged --quiet 2>/dev/null || git commit -m \"auto: update site $(date '+%Y-%m-%d %H:%M:%S')\" 2>/dev/null; git push origin HEAD 2>/dev/null; true",
+            "timeout": 30,
+            "statusMessage": "Sincronizando com GitHub..."
+          }
+        ]
+      }
+    ]
+  }
+}
