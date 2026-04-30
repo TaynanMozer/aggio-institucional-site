@@ -1057,15 +1057,26 @@ img, svg { display: block; max-width: 100%; }
   margin-bottom: 28px;
 }
 
-.contato-rapido {
+.contato-emails {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.contato-rapido button {
-  text-align: left;
-  padding: 14px 18px;
+.contato-emails-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--verde-principal);
+  margin-bottom: 4px;
+}
+
+.contato-emails a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 18px;
   background: var(--branco);
   border: 1px solid var(--cinza-borda);
   border-radius: var(--radius-sm);
@@ -1073,19 +1084,11 @@ img, svg { display: block; max-width: 100%; }
   font-weight: 500;
   color: var(--verde-profundo);
   transition: all var(--transition);
-  display: flex;
-  align-items: center;
-  gap: 12px;
 }
 
-.contato-rapido button:hover {
-  border-color: var(--verde-principal);
-  background: var(--verde-claro);
-  color: var(--verde-principal);
-}
-
-.contato-rapido button::before {
-  content: "→";
+.contato-emails a::before {
+  content: "✉";
+  font-size: 1rem;
   color: var(--verde-secundario);
   font-weight: 700;
 }
