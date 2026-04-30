@@ -1324,6 +1324,13 @@ img, svg { display: block; max-width: 100%; }
   .processo::before { display: none; }
   .processo-step { padding-top: 20px; }
   .processo-num { margin-top: 0; }
+  .galeria-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 640px) {
+  .galeria-grid { grid-template-columns: 1fr; }
+  .galeria-card { aspect-ratio: 4 / 3; }
+  .galeria-card-desc { max-height: none; opacity: 1; }
 }
 
 @media (max-width: 768px) {
