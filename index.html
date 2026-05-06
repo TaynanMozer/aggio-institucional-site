@@ -632,7 +632,58 @@ img, svg { display: block; max-width: 100%; }
 }
 
 /* -----------------------------
-   8. COMO ATUAMOS
+   8. SEÇÃO FUSADA (diagnóstico + por que)
+----------------------------- */
+.fusao-section {
+  background: var(--cinza-suave);
+}
+
+.fusao-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.fusao-col .section-title {
+  font-size: clamp(1.375rem, 1.8vw, 1.75rem);
+  margin-bottom: 12px;
+}
+
+.fusao-tese {
+  font-size: 0.9375rem;
+  color: var(--cinza-texto);
+  line-height: 1.65;
+  margin-bottom: 20px;
+}
+.fusao-tese strong { color: var(--verde-principal); }
+
+.fusao-col-resposta .por-que-intro {
+  max-width: 100%;
+  font-size: 0.9375rem;
+  margin-bottom: 12px;
+}
+.fusao-col-resposta .por-que-destaque {
+  max-width: 100%;
+  font-size: 0.9375rem;
+  margin: 16px 0;
+  padding: 14px 20px;
+}
+.fusao-col-resposta .por-que-fechamento {
+  max-width: 100%;
+  font-size: 0.9375rem;
+  margin-bottom: 24px;
+}
+.fusao-col-resposta .por-que-grid {
+  margin-top: 0;
+}
+
+@media (max-width: 980px) {
+  .fusao-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+
+/* -----------------------------
+   9. COMO ATUAMOS
 ----------------------------- */
 .como-atuamos {
   background: var(--verde-claro);
