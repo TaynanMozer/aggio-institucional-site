@@ -1093,72 +1093,61 @@ img, svg { display: block; max-width: 100%; }
 
 .historia-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.6fr;
   gap: 56px;
   align-items: start;
 }
 
-.historia-text p {
-  font-size: 1rem;
-  color: var(--cinza-texto);
-  line-height: 1.7;
-  margin-bottom: 18px;
-}
-
-.historia-visual {
-  background: var(--branco);
-  border: 1px solid var(--cinza-borda);
+.historia-foto {
+  position: sticky;
+  top: 96px;
   border-radius: var(--radius-md);
-  padding: 36px 32px;
-  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
 }
 
-.historia-visual::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 32px;
-  right: 32px;
-  height: 3px;
+.historia-foto img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.historia-foto-identity {
   background: var(--verde-principal);
-  border-radius: 0 0 3px 3px;
+  padding: 20px 24px;
 }
 
-.historia-pilares {
-  display: grid;
-  gap: 18px;
-}
-
-.historia-pilar {
-  display: flex;
-  gap: 14px;
-  align-items: flex-start;
-}
-
-.historia-pilar-num {
-  flex-shrink: 0;
-  width: 32px;
-  height: 32px;
-  border-radius: var(--radius-sm);
-  background: var(--verde-claro);
-  color: var(--verde-principal);
-  font-size: 0.8125rem;
+.historia-foto-nome {
+  font-size: 1.0625rem;
   font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.historia-pilar-content h4 {
-  font-size: 0.9375rem;
-  font-weight: 700;
-  color: var(--verde-profundo);
+  color: var(--branco);
   margin-bottom: 4px;
 }
-.historia-pilar-content p {
-  font-size: 0.875rem;
+
+.historia-foto-cargo {
+  font-size: 0.8125rem;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.45;
+}
+
+.historia-text p {
+  font-size: 0.9375rem;
   color: var(--cinza-texto);
-  line-height: 1.5;
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.historia-missao {
+  border-left: 3px solid var(--verde-secundario);
+  background: var(--verde-claro);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 16px 20px;
+  margin-top: 24px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--verde-profundo);
+  line-height: 1.65;
 }
 
 /* -----------------------------
