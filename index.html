@@ -270,7 +270,23 @@ img, svg { display: block; max-width: 100%; }
 .header-cta {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
+}
+
+.btn-area-cliente-header {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--cinza-texto);
+  padding: 8px 12px;
+  border: 1px solid var(--cinza-borda);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+.btn-area-cliente-header:hover {
+  border-color: var(--verde-principal);
+  color: var(--verde-principal);
+  background: var(--verde-claro);
 }
 
 /* Menu mobile (toggle) */
